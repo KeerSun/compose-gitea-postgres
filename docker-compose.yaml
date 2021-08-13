@@ -1,6 +1,8 @@
 version: '3.7'
 services:
   gitea:
+    labels:
+      shipyard.route: '/'
     image: gitea/gitea:latest
     environment:
       - DB_TYPE=postgres
